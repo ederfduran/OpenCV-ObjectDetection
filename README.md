@@ -38,5 +38,11 @@ $ cmake ..
 $ make
 $ ./ObjectDetection <image dir> <light pattern> // for this particular case ./ObjectDetection ../img/test_noise.pgm ../img/light.pgm
 ```
-**Note:** I'm using CommandLineParser to read the input, there are some optional parameters in program execution, from better understanding refer to : https://docs.opencv.org/3.4/d0/d2e/classcv_1_1CommandLineParser.html
+**Note:** CommandLineParser is used to read the input, there are some optional parameters in program execution, from better understanding refer to : https://docs.opencv.org/3.4/d0/d2e/classcv_1_1CommandLineParser.html
+
+To specify all input parameteres should be like this: 
+```sh
+./ObjectDetection ../img/test_noise.pgm ../img/light.pgm -lightMethod=0 -segMethod=2
+```
+
 
